@@ -1,0 +1,487 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>FuseMap UI</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <div class="root">
+
+    </div>
+
+    <header class="main-header">
+        <div class="main-header__inner">
+    
+            <!--LOGO-->
+            <h1 class="main-logo">
+                <a href="/" class="main-logo__link"></a>
+            </h1>
+    
+            <!--NAVIGATION-->
+            <nav class="main-nav main-nav--employer js-main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list__item active">
+                        <a href="#" class="main-nav__list__link">My Dashboard</a>
+                    </li>
+                    <li class="main-nav__list__item">
+                        <a href="#" class="main-nav__list__link">Workspace Utilization</a>
+                    </li>
+                    <li class="main-nav__list__item">
+                        <a href="#" class="main-nav__list__link">Thermostat Controls</a>
+                    </li>
+                    <li class="main-nav__list__item">
+                        <a href="#" class="main-nav__list__link">Surveys</a>
+                    </li>
+                    <li class="main-nav__list__item">
+                        <a href="#" class="main-nav__list__link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+    
+    
+            <!--PROFILE-->
+            <div class="main-profile">
+                <!--NOTIFICATION PANEL-->
+                <ul class="main-notifications">
+                    <li class="main-notifications__item">
+                        <a href="#" class="main-notifications__link main-notifications__link--message"></a>
+                    </li>
+                    <li class="main-notifications__item">
+                        <a href="#" class="main-notifications__link main-notifications__link--notification">
+    
+                            <span class="main-notifications__count icon__seat icon__seat--occupied">2</span>
+    
+                        </a>
+                    </li>
+                </ul>
+    
+                <a href="#" class="main-profile__photo">
+                    <img src="/assets/img/employer-avatar.png" alt="profile-photo">
+                </a>
+                <div class="main-profile__dropdown">
+                    <a href="#" class="main-profile__dropdown__arrow"></a>
+                </div>
+    
+                <a href="#" class="main-nav-btn js-main-nav-btn"><span></span></a>
+            </div>
+        </div>
+    
+        <div class="modal-window">
+            <div class="modal-window__content">
+                <div class="modal-window__head">
+    
+                    <span class="modal-window__arrow"></span>
+    
+                    <div class="modal-window__title">
+                        Notifications
+                    </div>
+                    <div class="modal-window__close">
+                        <span class="modal-window__icon-close"></span>
+                    </div>
+                </div>
+                <div class="modal-window__body">
+    
+                    <div class="recommendations">
+    
+                        <div class="recommendations__item recommendations__item--modal recommendations__item--active">
+                            <div class="recommendations__image" style="background-image: url('../../assets/img/recomendation-2.png')"></div>
+                            <div class="recommendations__info">
+                                <div class="recommendations__title">
+                                    Help Finding Information Online <span class="recommendations__date">Today,10:30am</span>
+                                </div>
+                                <div class="recommendations__text">
+                                    Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons.
+                                </div>
+                                <div class="recommendations__options">
+    
+                                    <button class="btn__submit">
+                                        Accept
+                                    </button>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="recommendations__item recommendations__item--modal">
+                            <div class="recommendations__image" style="background-image: url('../../assets/img/recomendation-1.png')"></div>
+                            <div class="recommendations__info">
+                                <div class="recommendations__title">
+                                    The Skinny On Lcd Monitors <span class="recommendations__date">Today,10:30am</span>
+                                </div>
+                                <div class="recommendations__text">
+                                    Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons.
+                                </div>
+                                <div class="recommendations__options">
+    
+                                    <button class="btn__approved">
+                                        Accepted
+                                    </button>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <div class="header-below-panel">
+        <div class="header-below-panel__inner header-below-panel__inner--employer">
+    
+            <div class="header-below-panel__item--employer">
+                Friday, Oct 20
+                <b>4:34 pm</b>
+            </div>
+    
+            <div class="header-below-panel__item--employer">
+    
+                <div class="index-panels">
+                    <ul class="index-panels__list">
+                        <li class="index-panels__item">
+                            <span class="index-panels__icon index-panels__icon--wind"></span>
+                            <div class="index-panels__info">
+                                <span class="index-panels__name">Wind</span>
+                                <span class="index-panels__value">6.8 km/h</span>
+                            </div>
+                        </li>
+                        <li class="index-panels__item">
+                            <span class="index-panels__icon index-panels__icon--pressure"></span>
+                            <div class="index-panels__info">
+                                <span class="index-panels__name">Pressure</span>
+                                <span class="index-panels__value">1024 MB</span>
+                            </div>
+                        </li>
+                        <li class="index-panels__item">
+                            <span class="index-panels__icon index-panels__icon--humidity"></span>
+                            <div class="index-panels__info">
+                                <span class="index-panels__name">Humidity</span>
+                                <span class="index-panels__value">74 %</span>
+                            </div>
+                        </li>
+                        <li class="index-panels__item">
+                            <span class="index-panels__icon index-panels__icon--temperature"></span>
+                            <div class="index-panels__info">
+                                <span class="index-panels__name">Temperature</span>
+                                <span class="index-panels__value">53.1 ºF</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+    <div class="main">
+        <div class="statistic-panel statistic-panel--employer">
+            <div class="statistic-panel__item statistic-panel__item--left">
+                <div class="statistic-panel__box">
+                    <div class="statistic-panel__value">234 kWh</div>
+                    <div class="statistic-panel__title">Consumption<br>per month</div>
+                </div>
+                <div class="statistic-panel__box">
+                    <div class="statistic-panel__value">56 kWh</div>
+                    <div class="statistic-panel__title">Average daily <br>consumption</div>
+                </div>
+            </div>
+            <div class="statistic-panel__item statistic-panel__item--center">
+                <div class="statistic-panel__box">
+                    <div class="statistic-panel__value">8:12am</div>
+                    <div class="statistic-panel__title">Average time <br>of arrival</div>
+                </div>
+                <div class="statistic-panel__box">
+                    <div class="statistic-panel__value">6:25pm</div>
+                    <div class="statistic-panel__title">Average time <br>of departure</div>
+                </div>
+            </div>
+            <div class="statistic-panel__item statistic-panel__item--right">
+                <div class="statistic-panel__box">
+                    <div class="statistic-panel__value">8:12am</div>
+                    <div class="statistic-panel__title">Average work <br>time duration</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="page-block">
+            <div class="page-block__inner">
+                <div class="page-block__head">
+                    <div class="page-block__title">
+                        Your electricity use
+                    </div>
+                    <div class="page-block__control">
+                        <div class="dropdown-select">
+                            <div class="dropdown-select__button">
+                                <span class="dropdown-select__name">
+                                    Today
+                                </span>
+                                <span class="dropdown-select__arrow-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-block__body" style="height: 260px">
+    
+                    <div class="line-chart">
+                        <div id="electicity-use" class="chart-instance"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="page-block">
+    
+            <div class="charts-block">
+                <div class="charts-block__item">
+                    <div class="charts-block__head">
+                        Electricity consumption in the building
+                    </div>
+                    <div class="charts-block__body">
+                        <img src="../../assets/img/chart-placeholder.jpg" alt="">
+                    </div>
+                </div>
+                <div class="charts-block__item">
+                    <div class="charts-block__head">
+                        Your electricity consumption
+                    </div>
+                    <div class="charts-block__body">
+                        <div class="chart-stairs">
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--a-plus">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            A+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--a">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            A
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--b">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            B
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--c">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            C
+                                        </span>
+                                    </div>
+                                    <div class="chart-stairs__mark">
+                                        Your rating
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--d">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            D
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-stairs__item">
+                                <div class="chart-stairs__block chart-stairs__block--e">
+                                    <div class="chart-stairs__round">
+                                        <span class="chart-stairs__char">
+                                            E
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="charts-block__item">
+                    <div class="charts-block__head">
+                        Recommendations
+                    </div>
+                    <div class="charts-block__body">
+                        <div class="recommendations">
+    
+                            <div class="recommendations__item">
+                                <div class="recommendations__image" style="background-image: url('../../assets/img/recomendation-1.png')"></div>
+                                <div class="recommendations__info">
+                                    <div class="recommendations__title">
+                                        The Skinny On Lcd Monitors
+                                    </div>
+                                    <div class="recommendations__text">
+                                        Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons.
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="recommendations__item">
+                                <div class="recommendations__image" style="background-image: url('../../assets/img/recomendation-2.png')"></div>
+                                <div class="recommendations__info">
+                                    <div class="recommendations__title">
+                                        Help Finding Information Online
+                                    </div>
+                                    <div class="recommendations__text">
+                                        Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <!--<div class="gauge-charts" id="gauge-charts">-->
+    
+    
+    
+            <!--</div>-->
+    
+        </div>
+    
+        <div class="page-block">
+            <div class="page-block__inner">
+                <div class="page-block__head">
+                    <div class="page-block__title">
+                        Suggested articles
+                    </div>
+                    <div class="page-block__control">
+                        <a href="#">All Articles</a>
+                    </div>
+                </div>
+                <div class="page-block__body">
+    
+                    <ul class="blog-articles">
+                        <li class="blog-articles__item">
+                            <div class="article-item">
+    
+                                <div class="article-item__photo">
+                                    <img src="../../assets/img/article-photo-1.png" class="article-item__img" alt="Thousands Now Adware Removal Who Never Thought They Could">
+                                </div>
+    
+                                <a href="#" class="article-item__title">
+                                    Thousands Now Adware Removal Who Never Thought They Could
+                                </a>
+                                <div class="article-item__desc">
+                                    Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace…
+                                </div>
+                                <div class="article-item__footer">
+                                    <a href="#">Read More</a>
+                                </div>
+    
+                            </div>
+                        </li>
+    
+                        <li class="blog-articles__item">
+                            <div class="article-item">
+    
+                                <div class="article-item__photo">
+                                    <img src="../../assets/img/article-photo-2.png" class="article-item__img" alt="Thousands Now Adware Removal Who Never Thought They Could">
+                                </div>
+    
+                                <a href="#" class="article-item__title">
+                                    Thousands Now Adware Removal Who Never Thought They Could
+                                </a>
+                                <div class="article-item__desc">
+                                    Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace…
+                                </div>
+                                <div class="article-item__footer">
+                                    <a href="#">Read More</a>
+                                </div>
+    
+                            </div>
+                        </li>
+    
+                        <li class="blog-articles__item">
+                            <div class="article-item">
+    
+                                <div class="article-item__photo">
+                                    <img src="../../assets/img/article-photo-1.png" class="article-item__img" alt="Thousands Now Adware Removal Who Never Thought They Could">
+                                </div>
+    
+                                <a href="#" class="article-item__title">
+                                    Thousands Now Adware Removal Who Never Thought They Could
+                                </a>
+                                <div class="article-item__desc">
+                                    Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace…
+                                </div>
+                                <div class="article-item__footer">
+                                    <a href="#">Read More</a>
+                                </div>
+    
+                            </div>
+                        </li>
+    
+                        <li class="blog-articles__item">
+                            <div class="article-item">
+    
+                                <div class="article-item__photo">
+                                    <img src="../../assets/img/article-photo-2.png" class="article-item__img" alt="Thousands Now Adware Removal Who Never Thought They Could">
+                                </div>
+    
+                                <a href="#" class="article-item__title">
+                                    Thousands Now Adware Removal Who Never Thought They Could
+                                </a>
+                                <div class="article-item__desc">
+                                    Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace…
+                                </div>
+                                <div class="article-item__footer">
+                                    <a href="#">Read More</a>
+                                </div>
+    
+                            </div>
+                        </li>
+    
+                        <li class="blog-articles__item">
+                            <div class="article-item">
+    
+                                <div class="article-item__photo">
+                                    <img src="../../assets/img/article-photo-1.png" class="article-item__img" alt="Thousands Now Adware Removal Who Never Thought They Could">
+                                </div>
+    
+                                <a href="#" class="article-item__title">
+                                    Thousands Now Adware Removal Who Never Thought They Could
+                                </a>
+                                <div class="article-item__desc">
+                                    Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace…
+                                </div>
+                                <div class="article-item__footer">
+                                    <a href="#">Read More</a>
+                                </div>
+    
+                            </div>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="29px" viewBox="0 0 112 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="general/header" transform="translate(-19.000000, -10.000000)" fill="#FFFFFF">
+            <g id="Logotype">
+                <g transform="translate(19.000000, 8.000000)">
+                    <path d="M11.6496158,10.6511861 L20.0847579,10.6511861 L14.4729295,12.7864091 L9.50368323,31.0810533 L11.6496158,10.6511861 Z M9.34845686,25.6536529 L8.08680044,9.73207364 L0.0382946785,2.04656712 L16.1353062,9.73207364 L11.1859889,9.73207364 L9.34845686,25.6536529 Z M12,6 C10.8954305,6 10,5.1045695 10,4 C10,2.8954305 10.8954305,2 12,2 C13.1045695,2 14,2.8954305 14,4 C14,5.1045695 13.1045695,6 12,6 Z" id="Combined-Shape"></path>
+                    <text id="FuseMap" font-family="AvalonTwo-Bold, AvalonTwo" font-size="21" font-weight="bold" line-spacing="32">
+                        <tspan x="26" y="20">Fusemap</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
