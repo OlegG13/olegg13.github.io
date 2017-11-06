@@ -828,6 +828,31 @@ pins.forEach(function (pin) {
     return pin.addEventListener('click', tougleToolbar);
 });
 
+var tabsContent = Array.from(document.querySelectorAll('.tabs-comp__content'));
+var tabs = Array.from(document.querySelectorAll('.tabs-comp__btn'));
+
+function tougleTab() {
+    tabsContent.forEach(function (item) {
+        if (item.classList.contains("tabs-comp__content--active")) {
+            item.classList.remove('tabs-comp__content--active');
+        } else {
+            item.classList.add('tabs-comp__content--active');
+        }
+    });
+
+    tabs.forEach(function (itemBtn) {
+        if (itemBtn.classList.contains("tabs-comp__btn--active")) {
+            itemBtn.classList.remove('tabs-comp__btn--active');
+        } else {
+            itemBtn.classList.add('tabs-comp__btn--active');
+        }
+    });
+}
+
+tabs.forEach(function (tab) {
+    return tab.addEventListener('click', tougleTab);
+});
+
 var dropSearch = document.querySelector('[data-dropdown-search]');
 var dropSearchSuggestion = document.querySelector('.search-suggestion');
 
