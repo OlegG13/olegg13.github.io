@@ -734,78 +734,126 @@ if (pie2El) {
 
 /* gauge-charts */
 var gaugeCharts = document.getElementById('gauge-charts');
-Highcharts.chart('gauge-charts', {
-    chart: {
-        type: 'gauge',
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        height: 220,
-        plotBackgroundColor: null,
-        //plotBackgroundImage: 'http://www.psdgraphics.com/file/colorful-triangles-background.jpg',
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'NUMERO DI TWEET'
-    },
-    exporting: {
-        enabled: false
-    },
-    credits: {
-        enabled: false
-    },
-    pane: {
-        startAngle: -90,
-        endAngle: 90,
-        center: ['50%', '98%'],
-        size: 250,
-        background: null
-    },
-    plotOptions: {
-        gauge: {
-            dataLabels: {
-                enabled: false
-            },
-            dial: {
-                radius: '90%',
-                backgroundColor: '#FFF',
-                topWidth: 1,
-                baseWidth: 8,
-                rearLength: '-4%'
-            },
-            pivot: {
-                radius: 7,
-                borderWidth: 7,
-                borderColor: 'white',
-                backgroundColor: 'transparent'
+if (gaugeCharts) {
+    Highcharts.chart('gauge-charts', {
+        chart: {
+            type: 'gauge',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            height: 220,
+            plotBackgroundColor: null,
+            //plotBackgroundImage: 'http://www.psdgraphics.com/file/colorful-triangles-background.jpg',
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'NUMERO DI TWEET'
+        },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        pane: {
+            startAngle: -90,
+            endAngle: 90,
+            center: ['50%', '98%'],
+            size: 250,
+            background: null
+        },
+        plotOptions: {
+            gauge: {
+                dataLabels: {
+                    enabled: false
+                },
+                dial: {
+                    radius: '90%',
+                    backgroundColor: '#FFF',
+                    topWidth: 1,
+                    baseWidth: 8,
+                    rearLength: '-4%'
+                },
+                pivot: {
+                    radius: 7,
+                    borderWidth: 7,
+                    borderColor: 'white',
+                    backgroundColor: 'transparent'
+                }
             }
-        }
-    },
-    // the value axis
-    yAxis: {
-        min: 0,
-        max: 100,
-        minorTickInterval: 'auto',
-        minorTickWidth: 0,
-        minorTickLength: 0,
-        minorTickPosition: 'outside',
-        minorTickColor: '#767775',
-        tickPixelInterval: 80,
-        tickWidth: 1,
-        tickPosition: 'outside',
-        tickLength: 10,
-        tickColor: '#767775',
-        labels: {
-            step: 1,
-            rotation: 'auto',
-            distance: 10
-        }
-    },
-    series: [{
-        name: 'Numero di Tweet',
-        data: [80],
-        color: '#fff'
-    }]
+        },
+        // the value axis
+        yAxis: {
+            min: 0,
+            max: 100,
+            minorTickInterval: 'auto',
+            minorTickWidth: 0,
+            minorTickLength: 0,
+            minorTickPosition: 'outside',
+            minorTickColor: '#767775',
+            tickPixelInterval: 80,
+            tickWidth: 1,
+            tickPosition: 'outside',
+            tickLength: 10,
+            tickColor: '#767775',
+            labels: {
+                step: 1,
+                rotation: 'auto',
+                distance: 10
+            }
+        },
+        series: [{
+            name: 'Numero di Tweet',
+            data: [80],
+            color: '#fff'
+        }]
+    });
+}
+
+var requestTooltip = document.querySelector('.tooltip');
+var requestToolbar = document.querySelector('.toolbar-comp');
+var closeToolbar = document.querySelector('.toolbar-comp__close');
+
+function tougleToolbar() {
+    if (requestTooltip) {
+        requestTooltip.classList.toggle('active');
+    }
+    requestToolbar.classList.toggle('active');
+}
+if (closeToolbar) {
+    closeToolbar.addEventListener('click', tougleToolbar);
+}
+
+var pins = Array.from(document.querySelectorAll('.points-list__item'));
+pins.forEach(function (pin) {
+    return pin.addEventListener('click', tougleToolbar);
 });
+
+var dropSearch = document.querySelector('[data-dropdown-search]');
+var dropSearchSuggestion = document.querySelector('.search-suggestion');
+
+if (dropSearch) {
+    dropSearch.addEventListener('click', function () {
+        dropSearchSuggestion.classList.toggle('active');
+    });
+}
+
+var searchForm = document.querySelector('.search-form');
+if (searchForm) {
+    var searchInput = searchForm.querySelector('.search-form__input');
+    var _searchSuggestion = searchForm.querySelector('.search-suggestion');
+    searchInput.addEventListener('focus', function () {
+        _searchSuggestion.classList.add('active');
+    });
+}
+
+var searchFormClose = document.querySelector('.search-form__close');
+if (searchFormClose) {
+    searchFormClose.addEventListener('click', function () {
+        if (searchSuggestion.classList.contains("active")) {
+            searchSuggestion.classList.remove('active');
+        }
+    });
+}
 
 /***/ }),
 /* 2 */

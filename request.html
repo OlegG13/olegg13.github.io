@@ -80,7 +80,7 @@
                         <span class="btn-back__icon"></span>
                     </a>
     
-                    <div class="dropdown">
+                    <div class="dropdown" data-dropdown-search>
                         <div class="dropdown__image">
                             <img src="/assets/img/drop-img.png" alt="drop-img">
                         </div>
@@ -89,6 +89,54 @@
                             <a href="#" class="dropdown__selected">Lorem ipsum dolor sit</a>
                         </div>
                         <a href="#" class="bottom-arrow"></a>
+    
+                        <div class="search-suggestion search-suggestion--lg">
+    
+                            <div class="dropdown-search">
+                                <span class="dropdown-search__icon"></span>
+                                <form class="dropdown-search__field">
+                                    <input type="text" class="dropdown-search__input" placeholder="Search building">
+                                </form>
+                            </div>
+    
+                            <a href="./realty-page.html" class="search-suggestion__item">
+    
+                                <div class="search-suggestion__photo search-suggestion__photo--img" style="background-image: url('../assets/img/drop-img.png')"></div>
+    
+                                <div class="search-suggestion__text">
+                                    <span class="search-suggestion__name">
+                                        AFM Database Use Only
+                                    </span>
+                                </div>
+    
+                            </a>
+    
+                            <a href="./realty-page.html" class="search-suggestion__item">
+    
+                                <div class="search-suggestion__photo search-suggestion__photo--img" style="background-image: url('../assets/img/drop-img.png')"></div>
+    
+                                <div class="search-suggestion__text">
+                                    <span class="search-suggestion__name">
+                                        Lois Graham
+                                    </span>
+                                </div>
+    
+                            </a>
+    
+                            <a href="./realty-page.html" class="search-suggestion__item">
+    
+                                <div class="search-suggestion__photo search-suggestion__photo--img" style="background-image: url('../assets/img/drop-img.png')"></div>
+    
+                                <div class="search-suggestion__text">
+                                    <span class="search-suggestion__name">
+                                        AFM Database Use Only
+                                    </span>
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
                     </div>
                     <div class="dropdown">
                         <div class="dropdown__header">
@@ -108,10 +156,12 @@
     
                 <div class="header-below-panel__item header-below-panel__item--admin tabs-container">
                     <ul class="tabs">
-                        <li class="tabs__item active"><a href="#" class="tabs__link">Statistics</a></li>
+                        <li class="tabs__item active">
+                            <a href="./realty-page.html" class="tabs__link">Statistics</a>
+                        </li>
                         <li class="tabs__item"><a href="./presence-tab.html" class="tabs__link">Presence</a></li>
-                        <li class="tabs__item"><a href="#" class="tabs__link">Utillization</a></li>
-                        <li class="tabs__item"><a href="#" class="tabs__link">Patterns</a></li>
+                        <li class="tabs__item"><a href="./utilization.html" class="tabs__link">Utillization</a></li>
+                        <li class="tabs__item"><a href="./patterns.html" class="tabs__link">Patterns</a></li>
                         <li class="tabs__item"><a href="./request.html" class="tabs__link">Requests</a></li>
                         <li class="tabs__item">
                             <a href="./search.html" class="tabs__link">
@@ -121,7 +171,7 @@
                     </ul>            </div>
             </div>
     </div>
-    <div class="toolbar-comp toolbar-comp--right active">
+    <div class="toolbar-comp toolbar-comp--right">
         <div class="toolbar-comp__head">
             <div class="toolbar-comp__title">
                 Request list
@@ -234,7 +284,7 @@
     
     
                     <ul class="points-list">
-                        <li class="points-list__item" style="left: 250px; top: 148px;">
+                        <li class="points-list__item" style="left: 283px; top: 140px;" data-open-request>
                             <span class="icon__seat icon__seat--occupied">1</span>
     
                                 <div class="tooltip">
