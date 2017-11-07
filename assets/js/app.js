@@ -635,19 +635,19 @@ var pieData = [{
 }];
 
 var pieData2 = [{
-    name: 'work 6-8 h - 33%',
+    name: '33% work 6-8 h',
     y: 505370
 }, {
-    name: 'work 8+ h - 24%',
+    name: '24% work 8+ h',
     y: 551500
 }, {
-    name: 'work 0-2 h - 3%',
+    name: '3% work 0-2 h',
     y: 312685
 }, {
-    name: 'work 2-4 h - 22%',
+    name: '22% work 2-4 h',
     y: 403232
 }, {
-    name: 'work 4-6 h - 16%',
+    name: '16% work 4-6 h',
     y: 312685
 }];
 

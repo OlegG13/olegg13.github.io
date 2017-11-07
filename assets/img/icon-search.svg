@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><g transform="translate(-1392 -20)"><image width="16" height="16" transform="translate(1392 20)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4T5XSTUhUURQH8P958+En1VSUHxOIvjeiA87TqYWrwJXZqlUJRm0iKqJoIUiboYUQQbmoiCCIyCgoiSCknbUrGmbmySN688aFIBYGYVnozHj/8ca0EdTwrg73nPvjnHuvoGy1t3fphXxhCJQeCOpJ/BSRlBAPnFzmWXntaixekEgktNHRl1eoeA1glUDmKJgUoIFkBIBGyOvaWpzNZDIz5VAJMAxzkEpdFyBL8Z1x3dTb1aJIJL5XqfwtUAYEmhWsLByybTu/1kEk0hmjUh9ITFdUFjtt217YqFVdN4dBNUTgRi5nDa4BRov5hFD9ovkOZ7Opdxsd9vbi8Xjgx3zRAtC8rPz7pqaS896+6HrHjEBqnGw6JCLcDCiN2mKOEOoSRHpdN/OmBBh6bImQSddNH9zqsJfTdfM8qO5oPvQ7jvV0BWiJTRMIDZw8tjORSKitEL05dhvCC5Bgl+t+TK0ARsdDKpyiz9eXc1LjmwHd3d1Vc3O/bRD7IQ27XXd8qQS0tZlGIc80gO+az286TvLbRohhmHep1DmIdtV108PrPpJhxM5S8R7B2YAmF2t2BF4lk8mCV9Ta2tHKoowosBeQheoa1lmW9Wsd8PeGT1N4E6T3GnkSnwE2ANjj5TWRL4qsE8hY44HQ8YmJiWJphPJ2m5qidUG//zKJHgL1EPkKLH/SlgP3A9VL7xcX/WMCHoXIi3A4dMJD1gH/e8ZoNBr8h2jPw+Fd/dsCVv7CkQqRmTEq9EG0R9sGVhFg9rFANf4BjNnuK0Kmxz0AAAAASUVORK5CYII="/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/search/2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/search/2" fill="#1F1D2A" fill-rule="nonzero">
+            <path d="M11.7489008,10.3346872 L14.9497475,13.5355339 C15.3402718,13.9260582 15.3402718,14.5592232 14.9497475,14.9497475 C14.5592232,15.3402718 13.9260582,15.3402718 13.5355339,14.9497475 L10.3346872,11.7489008 C9.2597335,12.5355664 7.9341039,13 6.5,13 C2.91014913,13 0,10.0898509 0,6.5 C0,2.91014913 2.91014913,0 6.5,0 C10.0898509,0 13,2.91014913 13,6.5 C13,7.9341039 12.5355664,9.2597335 11.7489008,10.3346872 L11.7489008,10.3346872 Z M6.5,11 C8.98528137,11 11,8.98528137 11,6.5 C11,4.01471863 8.98528137,2 6.5,2 C4.01471863,2 2,4.01471863 2,6.5 C2,8.98528137 4.01471863,11 6.5,11 Z"></path>
+        </g>
+    </g>
+</svg>
