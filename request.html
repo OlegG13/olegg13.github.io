@@ -181,14 +181,11 @@
         </div>
     </div>
     
-    <div class="toolbar-comp toolbar-comp--right">
+    <div class="toolbar-comp toolbar-comp--right active">
         <div class="toolbar-comp__head">
             <div class="toolbar-comp__title">
                 Request list
             </div>
-            <button class="toolbar-comp__close">
-                <span class="toolbar-comp__icon-close"></span>
-            </button>
         </div>
         <div class="toolbar-comp__body">
     
@@ -211,8 +208,8 @@
                     <div class="form-inline-comp__options">
     
                         <div class="form-inline-comp__option-btn">
-                            <button class="btn__submit">
-                                Approve
+                            <button class="btn__submit btn__submit--icon">
+                                <span class="btn__submit-text">Approve</span>
                             </button>
                         </div>
     
@@ -242,16 +239,11 @@
                     <div class="form-inline-comp__options">
     
                         <div class="form-inline-comp__option-btn">
-                            <button class="btn__submit">
-                                Approve
+                            <button class="btn__cancel btn__cancel--icon">
+                                <span class="btn__cancel-text">Denied</span>
                             </button>
                         </div>
     
-                        <div class="form-inline-comp__option-btn">
-                            <button class="btn__cancel">
-                                Deny
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="list-inline-comp__item list-inline-comp__item--padding">
@@ -272,8 +264,8 @@
                     <div class="form-inline-comp__options">
     
                         <div class="form-inline-comp__option-btn">
-                            <button class="btn__approved">
-                                Approve
+                            <button class="btn__approved btn__approved--icon">
+                                <span class="btn__approved-text">Approved</span>
                             </button>
                         </div>
     
@@ -294,7 +286,7 @@
     
     
                     <ul class="points-list">
-                        <li class="points-list__item" style="left: 283px; top: 140px;" data-open-request>
+                        <li class="points-list__item" style="left: 283px; top: 140px;" data-open-tooltip>
                             <span class="icon__seat icon__seat--occupied">1</span>
     
                                 <div class="tooltip">
@@ -319,9 +311,11 @@
                                             <div class="form-inline-comp__options">
                                 
                                                 <div class="form-inline-comp__option-btn">
-                                                    <button class="btn__submit">
-                                                        Approve
-                                                    </button>
+                                
+                                                        <button class="btn__submit btn__submit--icon">
+                                                            <span class="btn__submit-text">Approve</span>
+                                                        </button>
+                                
                                                 </div>
                                 
                                                 <div class="form-inline-comp__option-btn">

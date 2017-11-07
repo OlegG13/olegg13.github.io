@@ -373,7 +373,7 @@ if (employerChart) {
  * @type {[null,null]}
  */
 var response2 = [{
-    name: 'Forecast', data: [[(0, _moment2.default)('2014-01-01 1:30').valueOf(), 80], [(0, _moment2.default)('2014-01-01 2:30').valueOf(), 120], [(0, _moment2.default)('2014-01-01 3:30').valueOf(), 110], [(0, _moment2.default)('2014-01-01 4:30').valueOf(), 60]]
+    name: 'Forecast', data: [[(0, _moment2.default)('2014-01-01 6:00').valueOf(), 80], [(0, _moment2.default)('2014-01-01 10:00').valueOf(), 120], [(0, _moment2.default)('2014-01-01 16:00').valueOf(), 110], [(0, _moment2.default)('2014-01-01 20:00').valueOf(), 60]]
 }];
 
 addPropertiesToArr(response2, {
@@ -635,19 +635,19 @@ var pieData = [{
 }];
 
 var pieData2 = [{
-    name: 'work 6-8 h',
+    name: 'work 6-8 h - 33%',
     y: 505370
 }, {
-    name: 'work 8+ h',
+    name: 'work 8+ h - 24%',
     y: 551500
 }, {
-    name: 'work 0-2 h',
+    name: 'work 0-2 h - 3%',
     y: 312685
 }, {
-    name: 'work 2-4 h',
+    name: 'work 2-4 h - 22%',
     y: 403232
 }, {
-    name: 'work 4-6 h',
+    name: 'work 4-6 h - 16%',
     y: 312685
 }];
 
@@ -823,9 +823,20 @@ if (closeToolbar) {
     closeToolbar.addEventListener('click', tougleToolbar);
 }
 
-var pins = Array.from(document.querySelectorAll('.points-list__item'));
+function tougleTooltip() {
+    if (requestTooltip) {
+        requestTooltip.classList.toggle('active');
+    }
+}
+
+var pins = Array.from(document.querySelectorAll('[data-open-request]'));
 pins.forEach(function (pin) {
     return pin.addEventListener('click', tougleToolbar);
+});
+
+var pinsReqest = Array.from(document.querySelectorAll('[data-open-tooltip]'));
+pinsReqest.forEach(function (pinReq) {
+    return pinReq.addEventListener('click', tougleTooltip);
 });
 
 var tabsContent = Array.from(document.querySelectorAll('.tabs-comp__content'));
